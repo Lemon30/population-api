@@ -55,10 +55,10 @@ http://localhost:5000/docs
 
 
 ## Additional Data import
-20 of the most populated countries are included in the database:
-['US', 'MX', 'FR', 'CN', 'IT', 'DE', 'ID', 'ES', 'RO', 'GB', 'RU', 'AU', 'PH', 'PL', 'IN', 'AT', 'UA', 'CZ', 'BE', 'TR']
-Use the 2-letter country codes found in the link below to import additional places by country:
-https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes
+20 of the most populated countries are included in the database:  
+['US', 'MX', 'FR', 'CN', 'IT', 'DE', 'ID', 'ES', 'RO', 'GB', 'RU', 'AU', 'PH', 'PL', 'IN', 'AT', 'UA', 'CZ', 'BE', 'TR']  
+Use the 2-letter country codes found in the link below to import additional places by country:  
+https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes  
 ~~~
 cd data_import
 docker build -t data-import .
