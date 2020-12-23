@@ -28,6 +28,7 @@ docker network create my-pop-network
 ~~~
 
 Start redis and flask API:
+If prompted, change the docker-compose.yml version accordingly. (Ex: 3.9 to 3.3)
 ~~~
 cd web_service
 docker-compose up
