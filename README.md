@@ -42,6 +42,17 @@ Response:
 {"population": 296088}
 ~~~
 
+### API Documentation
+
+Swagger UI for API docs can be accessed from the link below:
+
+~~~
+http://localhost:5000/docs
+~~~
+
+![Image](/images/docs.png?raw=true)
+
+
 ## Additional Data import
 20 of the most populated countries are included in the database:
 ['US', 'MX', 'FR', 'CN', 'IT', 'DE', 'ID', 'ES', 'RO', 'GB', 'RU', 'AU', 'PH', 'PL', 'IN', 'AT', 'UA', 'CZ', 'BE', 'TR']
@@ -59,16 +70,6 @@ cd data_import
 docker build -t data-import .
 docker run --network my-pop-network data-import GR
 ~~~
-
-### API Documentation
-
-Swagger UI for API docs can be accessed from the link below:
-
-~~~
-http://localhost:5000/docs
-~~~
-
-![Image](/images/docs.png?raw=true)
 
 ### Limitations and Todos
 
