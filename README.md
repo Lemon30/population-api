@@ -18,7 +18,6 @@ If the given place is a city, the same process is applied to the neighboring geo
 The same process also puts a record in the database for each name, ascii name and alternate name with their respective geolocation.
 
 Then each API call finds the geohashes in the given area, unions all population values and returns the sum as the approximate population.
-
 ![Image](/images/geohash1.png?raw=true)
 
 ### Docker Usage
@@ -69,7 +68,7 @@ Swagger UI for API docs can be accessed from the link below:
 http://localhost:5000/docs
 ~~~
 
-![Image](../images/docs.png?raw=true)
+![Image](/images/docs.png?raw=true)
 
 ### Limitations and Todos
 
