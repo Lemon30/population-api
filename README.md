@@ -5,11 +5,11 @@ A Flask REST API with built-in places database that returns the approximate popu
 ### Description
 Imported data is stored as key-value pairs in Redis.
 There are two types of keys:
-- Place keys
-     - Insert place name-latitude,longitude pairs to redis
+- Place name keys
+     - Insert (place name)-(latitude,longitude) pairs to redis
      - Ex: 'Ukraine': '48.217892,23.1328'
 - Geohash keys
-     - Insert geohash-population_set pairs to redis
+     - Insert (geohash)-(population_set) pairs to redis
      - Ex: 'sp8f': {b'1052',b'11223',b'1419',b'15853'}
 
 Data import process finds the level 4 geohash of a given geolocation and stores the population value as a set.
