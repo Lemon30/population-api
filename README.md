@@ -65,11 +65,12 @@ docker build -t data-import .
 docker run --network my-pop-network data-import <2-letter-cc>
 ~~~
 
-Example import for Greece:
+Example import for Norway and test with Oslo:
 ~~~
 cd data_import
 docker build -t data-import .
-docker run --network my-pop-network data-import GR
+docker run --network my-pop-network data-import NO
+curl "curl "localhost:5000/population?place=Oslo&radius=30"
 ~~~
 
 ### Limitations and Todos
