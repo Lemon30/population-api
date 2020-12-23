@@ -1,0 +1,37 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "A Flask REST API with built-in places database that returns the approximate population in an area for a given place name and radius(km).",
+    "version": "1.0.0",
+    "title": "Population API"
+  },
+  "host": "localhost:5000",
+  "paths": {
+    "/population": {
+      "get": {
+        "summary": "Find population",
+        "parameters": [
+          {
+            "in": "query",
+            "name": "place",
+            "type": "string",
+            "description": "The place name",
+            "default": "Istanbul"
+          },
+          {
+            "in": "query",
+            "name": "radius",
+            "type": "integer",
+            "description": "The radius in km",
+            "default": 10
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success response"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,5 @@
+Flask==1.1.2
+python-geohash==0.8.5
+proximityhash==1.0.1
+redis==3.5.3
+voluptuous==0.12.1
